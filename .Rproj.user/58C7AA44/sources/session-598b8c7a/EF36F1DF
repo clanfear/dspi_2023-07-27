@@ -1,0 +1,27 @@
+{
+    "id": "EF36F1DF",
+    "path": "C:/Users/cclan/OneDrive/GitHub/ioc_phd-seminar/airbnb/slides.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "2589406003",
+    "contents": "",
+    "dirty": false,
+    "created": 1689632112802.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "278,3",
+        "scrollLine": "269"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1690231825,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1690231825368,
+    "read_only": false,
+    "read_only_alternatives": []
+}
