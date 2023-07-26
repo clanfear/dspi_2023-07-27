@@ -1,7 +1,7 @@
 ---
 title: "The Promise and Perils of the Sharing Economy"
 subtitle: "The Impact of Airbnb Lettings on Crime"
-author: "Chuck Lanfear<br>Dave Kirk"
+author: "Charles C. Lanfear<br>Dave S. Kirk"
 date: "27 July 2023"
 output:
   xaringan::moon_reader:
@@ -48,17 +48,17 @@ nuff_col <- c("Nuffield Teal"  = "#00a191",
 
 ???
 
-Thank you for having me, pleasure to be here.
+Thank you for having me, it is a pleasure to be here.
 
-While my interests are fairly broad, my primary work is theory-driven research on the social ecology of communities, in particular social control and crime.
+While my interests are fairly broad, as I noted in my letter, my primary work is theory-driven research on communities, in particular crime and responses to crime.
 
-As an example of this, today I'm presenting research that tests if Airbnbs contribute to crime in London. This is joint with Dave Kirk, and the paper recently received an R&R from Criminology, which I've been neglecting so I can prepare for today.
+As an example of this, today I'm presenting preregistered research that tests if Airbnbs contribute to crime in London---a topic with clear policy implications. This is joint work with committee member Dave Kirk, and the paper recently received a pretty positive R&R from Criminology, which I've been neglecting so I can prepare for today.
 
 XXX
 
 Airbnb has grown explosively since its founding in 2008. I expect some or most of you have either stayed in or operated one.
 
-News and social media are filled with concerns that this growth of short-term rentals is now having harmful impacts on communities
+News and social media are filled with concerns that this growth of short-term rentals is now having harmful impacts on communities throughout the world.
 
 ---
 # Housing Markets
@@ -71,7 +71,7 @@ Barron et al. (2020, p. 45):
 
 The most well-recognized effects are on housing markets, with many studies finding short-term renting reduces the housing supply and drives prices up for both renters and buyers.
 
-Property owners find it is more profitable to operate an Airbnb than offer conventional rentals, and this profitability has lead some Airbnb operators to purchase additional homes---sometimes dozens---to operate full-time Airbnbs.
+This occurs because property owners find it is more profitable to operate an Airbnb than offer conventional rentals, and this profitability has lead some Airbnb operators to purchase additional homes---sometimes dozens---to operate full-time Airbnbs.
 
 ---
 # Anti-Social Behaviour
@@ -86,7 +86,7 @@ Property owners find it is more profitable to operate an Airbnb than offer conve
 
 Short-term rentals may also contribute to disorder and anti-social behaviour. 
 
-While Airbnb claims these incidents are exceedingly rare, news media abounds with stories of nightmare Airbnb guests destroying apartments and parties getting out of hand.
+While Airbnb claims these incidents are exceedingly rare, news media abounds with stories---like the one pictured---of nightmare Airbnb guests destroying apartments and parties getting out of hand. We've heard some concerns from police about this as well.
 
 
 ---
@@ -117,7 +117,7 @@ background-size: cover
 
 ???
 
-Criminological theory gives us reasons to expect that proliferation of Airbnbs will increase crime rates
+Based on all that, criminological theory gives us reasons to expect that the proliferation of Airbnbs will increase crime rates
 
 We focus on two theories in this paper
 
@@ -134,6 +134,8 @@ We focus on two theories in this paper
   * This occurs *immediately*
 
 ???
+
+The first is routine activities theory.
 
 Routine activities theory describes crime as the result of opportunities: convergences of likely offenders and suitable targets in the absence of capable guardians.
 
@@ -186,7 +188,7 @@ Airbnb properties may contribute to opportunities in a number of ways
 
 The second theory is social disorganization.
 
-Social disorganization is a macro-theory of social control that says that sociodemographic advantage and stability promote social control capacity---often operationalized as collective efficacy
+Social disorganization is a macro-theory of social control that says that sociodemographic advantage and stability promote social control capacity---often operationalized using collective efficacy as we do in the paper
 
 Social control capacity influences criminal opportunity---mainly through guardianship---and tends to be fairly stable over time
 
@@ -203,6 +205,8 @@ Entire properties *replace* longer-term residents with very short-term ones
 * Weakens institutions
 
 ???
+
+In social disorg, residential instability is usually thought of as moves within a few years of entering the neighborhood
 
 Airbnbs represent an *extreme* form of residential instability
 
@@ -316,7 +320,7 @@ class: inverse
 background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/london.jpg")
 background-size: cover
 
-# The Setting
+# Airbnb and London
 
 ---
 # Airbnb and London
@@ -348,7 +352,7 @@ Our project focuses on London, one of the most popular Airbnb markets in the wor
 
 ???
 
-Despite fears of negative consequences of Airbnbs, there are policies in place incentivizing short term letting in London and the UK in general
+Despite fears of negative consequences of Airbnbs, there are policies in place incentivizing short term letting in London and the UK in general, like...
 
 ---
 # Data
@@ -360,7 +364,7 @@ Despite fears of negative consequences of Airbnbs, there are policies in place i
    * Property-month observations
    * Property type
    * Approximate geolocation
-
+   
 ]
 .pull-right[
 
@@ -372,9 +376,9 @@ Despite fears of negative consequences of Airbnbs, there are policies in place i
 
 In the paper we draw on a number of data sources, but I will focus on two today
 
-The first is data from AirDNA, a marketing data firm, on active Airbnb properties in London from November 2014 to May 2018
+The first is data on active Airbnb properties in London from AirDNA, a marketing data firm, covering November 2014 to May 2018---the period available via the CDRC
 
-These data include whether it is an entire apartment, spare room, or shared room.
+These are geolocated and include whether it is an entire apartment, spare room, or shared room.
 
 ---
 count: false
@@ -387,14 +391,14 @@ count: false
    * Nov 2014 - May 2018
    * Property-month observations
    * Property type
-   
+   * Approximate geolocation   
 
 * Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+
   * 6 crime types
-  * Mix of LSOA counts and geolocated events
+  * Mix of LSOA counts and approximate geolocation
 
-
-*Aggregated to LSOA-quarters*
+* Aggregated to **LSOA-quarters**
 
 
 ]
@@ -405,11 +409,11 @@ count: false
 
 ???
 
-The second is police-recorded crime data; we use two different sources as neither records all types of crime we're interest in
+The second main data are police-recorded crime incidents; we use two different sources as neither records all types of crime we're interest in, that being robbery, burglary, theft, ASB, and violence with and without harm
 
-We operationalization neighborhoods using 4835 LSOAs observed in 13 quarters each
+We operationalization neighborhoods using 4835 LSOAs
 
-While we have monthly data, LSOA-quarters is a compromise for feasible estimation---we see the same results using months but you get instability due to skew and autocorrelation.
+While we have monthly data, we conduct analyses using LSOA-quarter-years as a compromise for feasible estimation---we see the same results using months but you get instability due to skew and autocorrelation.
 
 ---
 count: false
@@ -426,10 +430,11 @@ count: false
    
 
 * Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
-  * 6 crime types
-  * **LSOA** observations
 
-*Aggregated to LSOA-quarters*
+  * 6 crime types
+  * Mix of LSOA counts and approximate geolocation
+
+* Aggregated to **LSOA-quarters**
 
 ]
 .pull-right[
@@ -439,10 +444,10 @@ count: false
    * MOPAC Public Attitudes Survey
      * Collective efficacy
      * Perceived crime
-   * Property sale records
    * AirDNA: Airbnb usage estimates
-   * Premier League games
    * Policy instruments
+   * Premier League games
+   * Property sale records
 ]
 
 ???
@@ -457,11 +462,11 @@ While I won't cover it today, the full paper uses a number of other data sources
 
 ???
 
+This map shows Airbnbs are highly concentrated in central London near attractions and amenities---much more concentrated than the population
+
+And there are a lot of Airbnbs! We observe an average of 39,000 active Airbnbs per month with an estimated 4.5 million guests during the study period
 
 
-We observe an average of 39,000 active Airbnbs per month with an estimated 4.5 million guests during the study period
-
-This map shows Airbnbs are highly concentrated in central London near attractions and amenities
 
 ---
 class: inverse
@@ -537,8 +542,6 @@ background-size: cover
 * **U**nobservables
 ]
 
---
-
 .centernote[*If concerned only with A → C, we can ignore mediators*]
 
 
@@ -603,16 +606,13 @@ For the main analysis, we're only interested in total effects of Airbnb on crime
 * **U**nobservables
 ]
 
-
---
-
 .centernote[*This is a cross-lagged panel model*]
 
 ???
 
-This gives us a straightforward cross-lagged model with unobserved confounders
+This gives us a cross-lagged model with unobserved confounders---a model commonly encountered in econometrics
 
-In the paper, we do analyses with collective efficacy, which is only slightly more complex.
+In the paper, we do analyses with collective efficacy, which is only slightly more complex---it adds one mediator---but has to be analyzed at a less granular scale (ward-years) so we do it separately.
 
 ---
 # Method: ML-SEM
@@ -622,8 +622,8 @@ Maximum Likelihood Fixed Effects Cross-Lagged Panel Model (ML-SEM)<sup>1</sup>
 * Asymptotically equivalent to Arellano-Bond<sup>2</sup>
 
   * Contemporaneous and lagged effects
-  * Addresses time-stable confounders
   * Autoregressive parameter
+  * Addresses time-stable confounders
   * Better finite sample performance
 
 * N = 4835 LSOAs
@@ -636,9 +636,13 @@ Maximum Likelihood Fixed Effects Cross-Lagged Panel Model (ML-SEM)<sup>1</sup>
 
 ???
 
-We assume the most serious confounders---such as features of the built environment---are relatively stable over our study period, such that they can be captured with fixed effects
+We estimate this cross-lagged model using Allison's fixed-effects cross-lagged panel model estimated via maximum likelihood structural equations; this is similar to the Arellano-Bond estimator if you're familiar
 
-We do find our results are insensitive to some major time-varying confounders like Premier League games and property sale prices.
+We specify both contemporaneous and lagged Airbnb effects to capture fast-acting opportunity and slow-acting destabilization effects, and an autoregressive term to catch stickiness in crime
+
+We assume the most serious confounders---such as features of the built environment and demographic composition---are relatively stable over our study period, and model them with LSOA fixed effects
+
+While we don't include time-varying measures in our main specifications, our results are insensitive to some candidate confounders like Premier League games and property sale prices.
 
 Now let's see some estimates
 
@@ -650,11 +654,13 @@ Now let's see some estimates
 
 ???
 
-This plot depicts the estimated number of additional crimes per active Airbnb property, with contemporaneous effect on left, lagged on right
+This plot depicts the estimated number of additional crimes per active Airbnb property each quarter, with contemporaneous effects on left, lagged effects on right
 
-We see fairly strong associations for robbery, burglary, violence, and theft, though the last is pretty noisy.
+Our results are consistent with an effect of Airbnb on crime.
 
-In no case is the lagged term significant: Contemporaneous effects appear to dominate
+We see fairly strong contemporaneous associations for robbery, burglary, theft, and violence though the theft estimate is pretty noisy.
+
+In contrast, lagged terms fail to reach significance: Contemporaneous effects appear to dominate, consistent with the opportunity explanation and less consistent with long-term destabilization effects
 
 ---
 # Property Types
@@ -663,7 +669,7 @@ Both theories suggest effects should be concentrated in *entire homes and apartm
 
 ???
 
-Our next hypothesis was that criminogenic effects should be more prominent for entire properties
+Our next hypothesis was that criminogenic effects should be more prominent for entire properties, because they reduce guardianship, increase suitability, and destabilize communities more than spare rooms
 
 --
 
@@ -677,7 +683,7 @@ Respecify model with disaggregated Airbnb measures:
 
 ???
 
-We test this by breaking up active properties into entire homes, private rooms, and shared rooms
+We test this by breaking up active properties into entire homes, private rooms, and shared rooms, and then re-estimating our models.
 
 ---
 
@@ -687,9 +693,12 @@ We test this by breaking up active properties into entire homes, private rooms, 
 
 ???
 
-Here I show only contemporaneous effects because the lagged ones are near-zero
 
-As expected, we see the total association was mainly driven by entire properties
+Here is the same type of plot again, but now I show only contemporaneous effects because the lagged ones are all near-zero again.
+
+As expected, we see the total association is mainly driven by entire properties---though we see a bit of evidence for private rooms and burglary.
+
+This provides support for our second hypothesis.
 
 ---
 class: inverse
@@ -712,9 +721,15 @@ Per quarter, each additional Airbnb is associated with...
 
 ???
 
-So, to recap, we find...
+Okay, let's talk about these results a bit.
 
-We also find these estimates are robust to different causal timing, Premier league games, spatial clustering, and excluding Zone 1 of London
+We find, per quarter...
+
+... these may seem small in magnitude, but keep in mind many LSOAs have dozens or and some upwards of a hundred dedicated Airbnb properties.
+
+
+
+We also find these estimates are quite stable (or robust) across different specifications, including different causal timings, Premier league games, spatial clustering, and even excluding Zone 1 of London
 
 
 --
@@ -731,8 +746,9 @@ Effects driven by entire homes and apartments for rent
 
 Not shown today: Little evidence for mediation by collective efficacy
 
-* Weak negative relationship with Airbnb
-* Airbnb effects not attenuated when including collective efficacy
+* Negative association between collective efficacy and crime
+* Weak effect of Airbnb on collective efficacy
+* Airbnb effects on crime not attenuated when including collective efficacy
 
 
 ---
@@ -743,22 +759,31 @@ Private short-term letting is reshaping the urban landscape
 * Increasing apartment rents and home prices
 * .bam[Compromising public safety]
 
+???
+
+Let's talk about implications.
+
 --
 
 Short-term letting is highly commercialized
 
+* Primarily dedicated year-round properties
 * Dominated by hosts with multiple dedicated properties
 
 --
 
-An externality problem
+This is an externality problem
 
 * Benefits accrue to few property owners
 * Livability and affordability reduced for all
 
+???
+
+In economic terms, this is an externality problem
+
 --
 
-.centernote[*Policy is needed to address the social costs of short-term letting, in particular dedicated properties*]
+.centernote[*Policy is needed to address the social costs of short-term letting, in particular from dedicated properties*]
 
 
 ---
