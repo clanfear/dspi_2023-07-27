@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
   color: var(--main-text-color);
 }
 .remark-slide-content {
-  background-position: left 15px bottom 15px, right 15px bottom 15px, bottom, bottom, top;
+  background-position: right 15px bottom 15px, left 15px bottom 15px, bottom, bottom, top;
   background-size: auto 50px, auto 40px, contain, contain, contain;
   background-image: 
     url("./img/csi_black.svg"), 
@@ -411,7 +411,7 @@ body {
     url("./img/cambridge_white-text.svg"),
     linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
     url("./img/title_background.jpg");
-  background-position: left 15px bottom 15px, right 15px bottom 15px, top, center;
+  background-position: right 15px bottom 15px, left 15px bottom 15px, top, center;
   background-size: auto 50px, auto 40px, contain, cover;
   text-shadow: 0 0 1px var(--main-text-color), 0 0 1px var(--main-text-color), 0 0 1px var(--main-text-color), 0 0 1px var(--main-text-color);
 }
